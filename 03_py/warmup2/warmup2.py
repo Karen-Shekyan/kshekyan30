@@ -7,13 +7,12 @@ def front_times(str, n):
 def string_bits(str):
   return str[::2]
 
-def array_count9(nums):
-  z = 0
-  for i in nums:
-    if(i == 9):
-      z += 1
+def string_splosion(str):
+  s = ''
+  for i in range(len(str)+1):
+    s += str[:i]
 
-  return z
+  return s
 
 def last2(str):
   l=0
@@ -25,13 +24,13 @@ def last2(str):
     return l-1
   return l
 
+def array_count9(nums):
+  z = 0
+  for i in nums:
+    if(i == 9):
+      z += 1
 
-def string_splosion(str):
-  s = ''
-  for i in range(len(str)+1):
-    s += str[:i]
-
-  return s
+  return z
 
 def array_front9(nums):
   for i in range(len(nums)):
