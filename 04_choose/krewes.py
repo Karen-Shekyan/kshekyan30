@@ -1,4 +1,11 @@
 '''
+Karen Shekyan
+SoftDev
+K04 -- function that takes in dictionary and returns a random value from the dictionary
+2022-09-22
+Time Spent: 0.5 hours
+'''
+'''
 DISCO:
  - Python has a .keys() function to get a list of keys from a dictionary
  - random.randint is inclusive on BOTH endpoints
