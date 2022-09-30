@@ -77,3 +77,5 @@ for i in range(20):
     try:
         (devo,period) = getRandKrew(krewes4)
         print(str(devo) + " from period " + str(period))
+    except ValueError:
+        print("ERROR: Dictionary has length 0")
