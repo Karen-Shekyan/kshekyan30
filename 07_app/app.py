@@ -1,9 +1,9 @@
 '''
-<NAME>
+Karen Shekyan
 SoftDev
-K07 --
+K07 -- Basics of flask (part 1?)
 2022-10-03
-Time Spent:
+Time Spent: .5 hrs
 '''
 
 from flask import Flask
@@ -37,7 +37,9 @@ QCC:
 ...
 
 INVESTIGATIVE APPROACH:
-<Your concise summary of how
- you and your team set about
- "illuminating the cave of ignorance" here...>
+ - Carefully read over the code several times.
+ - Make educated guesses as to how it works.
+ - Run the program, see what happens.
+ - Change the strings and print statement to see what changes in the output.
+ - Read over the code again to make better sense of it using our observations.
 '''
