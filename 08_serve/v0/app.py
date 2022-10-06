@@ -1,6 +1,6 @@
 # Karen Shekyan
 # SoftDev
-# Oct 2022
+# Oct 6, 2022
 
 from flask import Flask
 app = Flask(__name__) # Initialize app to an instance of Flask
