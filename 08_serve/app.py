@@ -58,15 +58,16 @@ def main():
     #add job choice
     string += "<h3>Job choice: </h3>" + pickJob(dictionary) + "<br/><br/><br/>"
 
+    #create table to display jobs and weights
     string += """<h3>Jobs table: </h3>
     <table> <tr> <th> Job Class </th> <th> Percentage </th> </tr>"""
-    #add list of jobs and their probabilities
+    #add jobs and their weights
     key_list = list(dictionary.keys())
     for job in key_list:
         string += "<tr> <td>" + job + "</td> <td> " + str(dictionary[job]) + "</td> </tr>"
 
-    #add horizontal line and total information for table of jobs
-    string += "<tr> <th> Total: </th> <th>" + str(total) + "</th> </tr>"
+    #show total information for table of jobs
+    string += "<tr> <th> Total: </th> <th>" + str(total) + "</th> </tr> </table>"
     #output the string
     return string
 
