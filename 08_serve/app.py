@@ -54,7 +54,7 @@ def main():
     #create big string to output
     #add names and TNPG
     string = """<h1>The Great Kidding Scuba-Doo Divers</h1>
- <h2>David Chen, Kevin Li, Karen Shekyan</h2> <br/>"""
+    <h2>David Chen, Kevin Li, Karen Shekyan</h2> <br/>"""
     #add job choice
     string += "<h3>Job choice: </h3>" + pickJob(dictionary) + "<br/><br/><br/>"
 
