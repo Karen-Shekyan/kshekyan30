@@ -13,6 +13,7 @@ Prediction: .md and files in static will get downloaded because the text on the 
     - .txt files got displayed, which is strange since the plaintext static/foo file got downloaded
     - .json files also get displayed
     - .csv, .java, and .exe got downloaded
+    - .png files get displayed by the browser as images
 
 Prediction: the files in static get run once upon booting up the website and not upon reloading
     - files in static don't get run AT ALL, EVER
