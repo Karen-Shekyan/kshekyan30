@@ -1,6 +1,6 @@
-# Clyde 'Thluffy' Sinclair
+# Karen Shekyan
 # SoftDev
-# Oct 2022
+# Oct 17 2022
 
 from flask import Flask             #facilitate flask webserving
 from flask import render_template   #facilitate jinja templating
