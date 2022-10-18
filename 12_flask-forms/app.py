@@ -1,6 +1,8 @@
-# Karen Shekyan
+# Team Scooby-Doo Dog Erasers - Karen Shekyan, Gabriel Thompson, Russell Goyachev`
 # SoftDev
-# Oct 17 2022
+# K12 -- Take and Give
+# 2022-10-17
+# time spent: 0.5hrs
 
 from flask import Flask             #facilitate flask webserving
 from flask import render_template   #facilitate jinja templating
@@ -21,7 +23,6 @@ TASK: Predict which...
 Devise some simple tests you can run to "take apart this engine," as it were.
 Execute your tests.
 Process results.
-
 PROTIP: Insert your own in-line comments
  wherever they will help
   your future self and/or current teammates
