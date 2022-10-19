@@ -1,0 +1,54 @@
+/*
+Team Scooby-Doo Dog Erasers - Karen Shekyan, Gabriel Thompson, Russell Goyachev`
+SoftDev
+K13 -- Stuylin' & Wylin' & Profilin'
+2022-10-18
+time spent: 0.7 hrs
+*/
+h1 {
+  text-align: center;
+  background-color: rgb(190, 190, 190);
+  color: #ffffff;
+  margin: 0;
+  padding: 0.5vw;
+}
+
+p, h1, li, h3 {
+  letter-spacing: -1px;
+}
+
+table {
+  border: none;
+}
+
+td {
+  vertical-align: top;
+  background: rgb(118, 118, 118);
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+  width: 23vw;
+  color: rgb(218, 218, 206);
+}
+
+body {
+  background-color: rgb(102, 102, 102);
+  font-family: 'Verdana';
+}
+
+#copyright {
+  text-align: right;
+  background-color: rgb(86, 86, 86);
+  color: rgb(115, 115, 115);
+  margin: 0;
+  padding: 1vw;
+}
+
+#nav {
+  padding-left: 1vw;
+}
