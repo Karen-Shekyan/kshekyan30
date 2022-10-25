@@ -12,7 +12,7 @@ time spent: 0.5 hours
 # nota bene:
 ## creating tables
 To create a new SQLite database named "ex1" with a single table named "tbl1", you might do this:
-`
+```
 $ sqlite3 ex1
 SQLite version 3.36.0 2021-06-18 18:36:39
 Enter ".help" for usage hints.
@@ -23,29 +23,29 @@ sqlite> select * from tbl1;
 hello!|10
 goodbye|20
 sqlite>
-`
+```
 - sql will autobox your table inputs. For example, the following code will not cause an error, even though tb1 wants (text, int)
-`
+```
 insert into tbl1 values(1, 2);
-`
+```
 
 ## querying database
 To see a list of tables:
-`
+```
 .tables
-`
+```
 To see a list of databases:
-`
+```
 .databases
-`
+```
 To see the schema (the structure) of a table:
-`
+```
 .schema
-`
+```
 These commands are shortcuts for things that can be done by other means.
 
 ## editing databases
-`
+```
 .open databaseName
 select * from table;
-`
+```
