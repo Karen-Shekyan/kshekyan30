@@ -17,33 +17,40 @@ c = db.cursor()               #facilitate db ops -- you will use cursor to trigg
 
 # < < < INSERT YOUR TEAM'S POPULATE-THE-DB CODE HERE > > >
 
-c.execute("DROP TABLE students;")
+c.execute("DROP TABLE IF EXISTS students;")
 command = "CREATE TABLE students (name TEXT, age INT, id INT);"
 c.execute(command)    # run SQL statement
 
-c.execute("DROP TABLE courses;")
+c.execute("DROP TABLE IF EXISTS courses;")
 command = "CREATE TABLE courses (code TEXT, mark INT, id INT);"
 c.execute(command)
 
 # def csv_to_dict(filename): #make this command with optional args later??
 file = open("students.csv", "r")
-reader = csv.DictReader(file)
-students_dictionary = {}
+reader = list(csv.reader(file))
 for row in reader:
-    students_dictionary[int(row["id"])] = [row["name"], int(row["age"])]
+    if (not row == reader[0]):
+        command = f"INSERT INTO students VALUES(\"{row[0]}\", {int(row[1])}, {int(row[2])});"
+        c.execute(command)
 
 file = open("courses.csv", "r")
-reader = csv.DictReader(file)
-course_dictionary = {}
+reader = list(csv.reader(file))
 for row in reader:
-    course_dictionary[int(row["id"])] = [row["code"], int(row["mark"])]
+    if (not row == reader[0]):
+        command = f"INSERT INTO courses VALUES(\"{row[0]}\", {int(row[1])}, {int(row[2])});"
+        c.execute(command)
 
-for key in course_dictionary:
-    command = ""
-    command += f"INSERT INTO courses VALUES({course_dictionary[key][0]}, {course_dictionary[key][1]}, {key});"
-    c.execute(command)
-# for key in students_dictionary:
+#reorder the tables to make more sense??
+# ^does that even matter? ; reorder dictionaries?
+
+# for key in course_dictionary:
+#     command = f"INSERT INTO courses VALUES(\"{course_dictionary[key][0]}\", {course_dictionary[key][1]}, {key});"
+#     c.execute(command)
 #
+# for key in students_dictionary:
+#     command = f"INSERT INTO students VALUES(\"{students_dictionary[key][0]}\", {students_dictionary[key][1]}, {key});"
+#     c.execute(command)
+
 
 #==========================================================
 
