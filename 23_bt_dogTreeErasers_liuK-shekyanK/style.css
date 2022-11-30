@@ -1,0 +1,30 @@
+p {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  margin-left: 20px;
+}
+
+pre {
+  color: red;
+}
+
+.container {
+  background-color: #9ce9ff;
+  border-style: solid;
+}
+
+img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* code {
+  background-color: #c2fffd;
+} */
