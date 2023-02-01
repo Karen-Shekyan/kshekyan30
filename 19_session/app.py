@@ -8,7 +8,7 @@ from flask import Flask, render_template, session, request, redirect, url_for
 
 app = Flask(__name__)
 
-app.secret_key = "AAAAA";
+app.secret_key = "AAAAA"
 username = "BOB"
 password = "PINEAPPLE"
 eUser = ""
@@ -41,7 +41,7 @@ def login():
         else:
             return render_template("login.html")
     else:
-        return render_template("response.html", username = session  [eUser][0],
+        return render_template("response.html", username = session[eUser][0],
         password = session[eUser][1])
 
 @app.route('/logout', methods=['GET', 'POST'])
