@@ -5,12 +5,6 @@ var stopButton = document.getElementById("buttonStop");
 var ctx = c.getContext("2d");
 ctx.fillStyle = "green";
 
-// ctx.beginPath();
-// ctx.fillStyle="#ff0000";
-// ctx.arc(100, 100, 50, 0, 2 * Math.PI);
-// ctx.fill();
-// ctx.stroke();
-
 var requestID;
 
 var clear = (e) => {
